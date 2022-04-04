@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <script src="/static/js/flexible.min.js"></script>
+  <link rel="stylesheet" href="/static/css/home.css">
+  <style>
+    [v-cloak] {
+      display: none !important;
+    }
+  </style>
+  <title>vue-cli-amy</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but classroom doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <img src="/static/images/logo.jpg" width="0" height="0" style="position: absolute; opacity: 0; z-index: -1;" id="wx_share_default" >
+  <div class="app-home bg-white app-loading" id="loading-wrap" style="z-index: 9999;background:#fff;">
+    <div class="logo-wrap text-center">
+      <div class="floor-wrap-new">
+        <img src="/static/images/logo.gif">
+      </div>
+      <p class="fixed-footer text-center copy">
+        <a href="" target="_blank">xxx-xxx-xxx</a>
+      </p>
+    </div>
+  </div>
+  <div id="app"></div>
+  <script>
+    var appLoadDom = document.querySelector("#loading-wrap");
+  </script>
+  <!-- CDN引入资源 -->
+  <script src="/static/js/jweixin-1.6.0.js"></script>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
